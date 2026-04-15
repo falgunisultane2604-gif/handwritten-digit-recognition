@@ -1,11 +1,11 @@
 🔢 Handwritten Digit Recognition using CNN
 📌 Overview
 
-This project implements a Convolutional Neural Network (CNN) to classify handwritten digits (0–9) using the MNIST dataset. The model learns image patterns and can be used for real-world digit recognition applications such as digit reading systems and automation tasks.
+This project implements a Convolutional Neural Network (CNN) to classify handwritten digits (0–9) using the MNIST dataset. The model learns image patterns and can be applied in real-world tasks such as digit recognition systems and automation.
 
 📂 Dataset
 
-The MNIST dataset is used and converted into CSV format for easy processing:
+The MNIST dataset is used and converted into CSV format for easier handling:
 
 First column → Digit labels (0–9)
 Remaining 784 columns → Pixel values (28×28 grayscale image)
@@ -14,15 +14,15 @@ Both training and testing datasets follow the same structure.
 
 ❓ Why CNN?
 
-Traditional neural networks (MLPs) are not efficient for image data because they:
+Traditional neural networks (MLPs) are not suitable for image data because they:
 
 Require a large number of parameters
-Increase computation time
+Increase computational cost
 Are prone to overfitting
 
-CNNs solve this by:
+CNNs address these issues by:
 
-Capturing spatial relationships
+Capturing spatial relationships in images
 Using local feature extraction
 Providing better accuracy and efficiency
 🧠 CNN Architecture
@@ -34,11 +34,11 @@ Dropout → Flatten → Dense(256) → Dropout → Dense(10) → Softmax → Out
 Applies filters to extract features
 Detects edges, shapes, and patterns
 2. Activation & Normalization
-ReLU improves learning
+ReLU improves learning efficiency
 Batch Normalization stabilizes training
 3. Pooling Layer
-Reduces image size
-Prevents overfitting
+Reduces spatial dimensions
+Helps prevent overfitting
 Types: Max Pooling, Average Pooling
 4. Fully Connected Layer
 Converts features into a vector
@@ -46,7 +46,7 @@ Performs final classification using Softmax
 💾 Model Saving & Loading
 HDF5 Format (.h5)
 
-Includes full model (architecture + weights + optimizer)
+Stores complete model (architecture + weights + optimizer)
 
 Save Model:
 
@@ -86,6 +86,6 @@ Run the model
 python main.py
 🎯 Applications
 Digit recognition systems
-Automated form reading
-Bank cheque processing
+Automated form processing
+Bank cheque reading
 OCR-based applications
